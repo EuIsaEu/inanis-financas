@@ -1,0 +1,54 @@
+:root{
+    --var-roxo: #563975;
+    --var-laranja: #f9b880;
+    --var-laranja-forte: #cf5d0c;
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap');
+}
+
+*{
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    width: 96%;
+    height: 7vw;
+    margin: 0 2%;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo{
+    width: 25%;
+    height: 5vw;
+    margin-left: 0;
+    color: var(--var-roxo);
+    align-items: center;
+}
+#logo img{
+    height: 6vw;
+}
+
+#menu{
+    width: 50%;
+    height: 7vw;
+    margin-right: 0;
+    align-items: center;
+}
+#menu a{
+    color: var(--var-laranja-forte);
+    font-size: 1.5vw;
+    margin: 0 0 0 3%;
+}
+
+#container{
+    width: 96%;
+    margin: 1% 2%;
+}
+
+.flex{
+    display: flex;
+}
