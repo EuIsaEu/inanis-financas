@@ -25,7 +25,7 @@ a{
     width: 30%;
     height: 5vw;
     margin-left: 0;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     color: var(--var-roxo);
     align-items: center;
 }
@@ -35,7 +35,7 @@ a{
 }
 
 #menu{
-    width: 50%;
+    width: 60%;
     height: 7vw;
     margin-right: 0;
     font-size: 1vw;
@@ -44,7 +44,7 @@ a{
 #menu a{
     color: var(--var-laranja-forte);
     font-size: 1.5vw;
-    margin: 0 0 0 3%;
+    margin: 0 0 0 5%;
 }
 
 #container{
