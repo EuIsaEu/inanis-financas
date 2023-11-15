@@ -25,13 +25,16 @@ a{
     width: 30%;
     height: 5vw;
     margin-left: 0;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     color: var(--var-roxo);
     align-items: center;
 }
 #logo img{
-    height: 6vw;
-    margin-right: 1vw;
+    height: 5vw;
+    margin-right: 0.5vw;
+}
+#logo h1{
+    margin-left: 0;
 }
 
 #menu{
@@ -51,6 +54,32 @@ a{
     width: 96%;
     height: 20vw;
     margin: 1% 2%;
+}
+
+#contend-dir{
+    width: 60%;
+    height: 40vw;
+    display: grid;
+    grid-template-rows: 25vw 15vw;
+    grid-template-areas: 
+        'eduFinan eduFinan'
+        'primoRico licao-dinheiro';
+}
+#edu-finan{
+    grid-area: eduFinan;
+    align-items: center;
+}
+#edu-finan img{
+    height: 20vw;
+}
+#primo-rico{
+    grid-area: primoRico;
+    background-color: blue;
+}
+
+#contend-esq{
+    width: 30%;
+    height: 40vw;
 }
 
 .flex{
