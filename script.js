@@ -1,4 +1,4 @@
-alert('teste')
+
 const licaoDinheiro = document.getElementById('licao-dinheiro');
 const logoInsta = document.getElementById('insta-logo');
 

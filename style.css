@@ -48,7 +48,7 @@ footer{
 }
 
 #menu{
-    width: 60%;
+    width: 50%;
     height: 7vw;
     margin-right: 0;
     font-size: 1vw;
@@ -57,7 +57,7 @@ footer{
 #menu a{
     color: var(--var-laranja-forte);
     font-size: 1.5vw;
-    margin: 0 0 0 5%;
+    margin-right: 0
 }
 
 #container{
@@ -69,10 +69,10 @@ footer{
 
 #contend-dir{
     width: 60%;
-    /* height: 50vw; */
+    height: auto;
     margin: 0 0 0 0;
     display: grid;
-    grid-template-rows: 25vw 30vw;
+    grid-template-rows: 27vw 30vw;
     grid-template-columns: 60% 39%;
     column-gap: 1%;
     grid-template-areas: 
@@ -85,6 +85,12 @@ footer{
     grid-area: eduFinan;
     align-items: center;
 }
+#edu-finan h1{
+    font-size: 5vw;
+    margin-bottom: 1vw;
+    color: var(--var-roxo);
+    animation: takodachi-in 2.5s;
+}
 #edu-finan img{
     height: 22vw;
     position: relative;
@@ -92,11 +98,11 @@ footer{
 
 #tako-banner{
     animation: takodachi-in 2s;
-    margin-left: 2vw;
+    margin-left: 5vw;
 }
 
 #tako-dindin{
-    margin-left: 3vw;
+    /* margin-left: 3vw; */
     animation: dindin-in 2s;
 }
 
@@ -130,8 +136,10 @@ footer{
     border-radius: 2vw;
 }
 
-#insta-logo[data-opacity = '1']{
+#insta-logo{
     width: 6vw;
+}
+#insta-logo[data-opacity = '1']{
     z-index: -1;
     position: absolute;
     left: 34%;
@@ -143,7 +151,7 @@ footer{
 
 #contend-esq{
     width: 35%;
-    height: 55vw;
+    min-height: 55vw;
 }
 
 #contend-esq h1{
@@ -193,6 +201,89 @@ footer{
 
 .img-fade:hover{
     opacity: 0.5;
+}
+
+@media (max-width: 720px){
+
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        height: 10vw;
+        background-color: white;
+    }
+
+    #logo{
+        width: 40%;
+        height: 10vw;
+        font-size: 1.8vw;
+    }
+    #logo img{
+        height: 8vw;
+    }
+
+    #menu a{
+        font-size: 2vw;
+        font-weight: 500;
+    }
+
+    #container{
+        flex-direction: column;
+    }
+
+    #contend-dir{
+        grid-template-rows: 50vw 55vw;
+        width: 100%;
+    }
+
+    #edu-finan img{
+        height: 40vw;
+    }
+
+    #primo-rico img{
+        width: 100%;
+    }
+
+    #yt-text h2{
+        font-size: 3vw
+    }
+
+    #yt-text h3{
+        font-size: 2vw;
+    }
+
+    #licao-dinheiro{
+        width: 100%;
+    }
+
+    #insta-post{
+        width: 100%;
+    }
+
+    #insta-logo{
+        width: 11vw;
+    }
+
+    #licao-dinheiro span{
+        font-size: 2vw;
+    }
+
+
+    #contend-esq{
+        width: 100%;
+    }
+    #contend-esq h1{
+        font-size: 6vw;
+    }
+
+    #div-noticias{
+        row-gap: 4vw;
+    }
+
+    .noticia p{
+        font-size: 3.5vw
+    }
+
 }
 
 @keyframes takodachi-in{
