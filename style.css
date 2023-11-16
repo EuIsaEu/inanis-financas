@@ -22,7 +22,7 @@ a{
 }
 
 img{
-    animation: imgs-in 1.5s;
+    animation: imgs-in 3s;
 }
 
 footer{
@@ -120,18 +120,25 @@ footer{
 #licao-dinheiro{
     position: relative;
 }
+#licao-dinheiro span{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
 
 #insta-post{
     width: 21vw;
     border-radius: 2vw;
 }
 
-#insta-logo{
-    width: 3vw;
-    z-index: 1;
+#insta-logo[data-opacity = '1']{
+    width: 6vw;
+    z-index: -1;
     position: absolute;
-    left: 43%;
-    top: 30%;
+    left: 34%;
+    top: 25%;
+}
+#insta-logo[data-opacity = '0']{
+    display: none;
 }
 
 #contend-esq{
