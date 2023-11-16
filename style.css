@@ -1,5 +1,5 @@
 :root{
-    --var-roxo: #563975;
+    --var-roxo: #561d6d;
     --var-laranja: #f9b880;
     --var-laranja-forte: #cf5d0c;
     @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap');
@@ -19,6 +19,16 @@ header{
 
 a{
     text-decoration: none;
+}
+
+img{
+    animation: imgs-in 1.5s;
+}
+
+footer{
+    width: 100%;
+    height: 20vw;
+    background-color: var(--var-roxo)
 }
 
 #logo{
@@ -52,36 +62,164 @@ a{
 
 #container{
     width: 96%;
-    height: 20vw;
-    margin: 1% 2%;
+    min-height: 50vw;
+    margin: 3% 2%;
 }
+
 
 #contend-dir{
     width: 60%;
-    height: 40vw;
+    /* height: 50vw; */
+    margin: 0 0 0 0;
     display: grid;
-    grid-template-rows: 25vw 15vw;
+    grid-template-rows: 25vw 30vw;
+    grid-template-columns: 60% 39%;
+    column-gap: 1%;
     grid-template-areas: 
         'eduFinan eduFinan'
         'primoRico licao-dinheiro';
 }
 #edu-finan{
+    width: 100%;
+    margin-left: 0;
     grid-area: eduFinan;
     align-items: center;
 }
 #edu-finan img{
-    height: 20vw;
+    height: 22vw;
+    position: relative;
 }
+
+#tako-banner{
+    animation: takodachi-in 2s;
+    margin-left: 2vw;
+}
+
+#tako-dindin{
+    margin-left: 3vw;
+    animation: dindin-in 2s;
+}
+
 #primo-rico{
+    width: 100%;
     grid-area: primoRico;
-    background-color: blue;
+    /* background-color: blue; */
+}
+#primo-rico img{
+    width: 100%;
+    border-radius: 1vw;
+}
+
+#yt-text h2{
+    font-size: 2vw;
+}
+#yt-text h3{
+    font-size: 1vw
+}
+
+#licao-dinheiro{
+    position: relative;
+}
+
+#insta-post{
+    width: 21vw;
+    border-radius: 2vw;
+}
+
+#insta-logo{
+    width: 3vw;
+    z-index: 1;
+    position: absolute;
+    left: 43%;
+    top: 30%;
 }
 
 #contend-esq{
-    width: 30%;
-    height: 40vw;
+    width: 35%;
+    height: 55vw;
 }
+
+#contend-esq h1{
+    margin-bottom: 1vw;
+    font-size: 3vw;
+    color: var(--var-roxo)
+}
+
+#div-noticias{
+    display: grid;
+    /* grid-template-rows: 20vw 20vw 20vw; */
+    grid-template-columns: 50% 50%;
+    row-gap: 1vw;
+}
+
+.noticia{
+    width: 96%;
+    min-height: 20vw;
+}
+.noticia img{
+    width: 100%;
+    border-radius: 1vw;
+    transition: all ease 500ms
+}
+.noticia img:hover{
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px var(--var-roxo);
+}
+
+.noticia span{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.noticia span:hover{
+    color: var(--var-roxo);
+}
+
+
 
 .flex{
     display: flex;
+}
+
+.img-fade{
+    transition: opacity ease 1s;
+}
+
+.img-fade:hover{
+    opacity: 0.5;
+}
+
+@keyframes takodachi-in{
+    0%{
+        left: -10vw;
+        opacity: 0;
+    }
+
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes dindin-in{
+    0%{
+        right: -10vw;
+        opacity: 0;
+    }
+
+    100%{
+        right: 0;
+        opacity: 1;
+    }
+
+}
+
+@keyframes imgs-in{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
 }
