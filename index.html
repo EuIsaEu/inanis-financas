@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/takodachi.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="home()">
+    <div id="yt-video"></div>
     <header class="flex">
         <div id="logo" class="flex">
             <img src="img/takodachi.webp" alt="">
@@ -15,13 +16,12 @@
         </div>
         <nav id="menu" class="flex">
             <a href="https://euisaeu.github.io/hotel/" target="_blank">Nossos Hotéis</a>
-            <a href="" target="_blank">Dicas para seu investimento</a>
+            <a href="dicas.html">Dicas para seu investimento</a>
         </nav>
     </header>
     <div id="container" class="flex">
         <div id="contend-dir">
             <div id="edu-finan">
-                <!-- <h1>Perdendo dinheiro?</h1> -->
                 <div id="banner">
                     <img id="tako-banner" src="img/tako-assustado.png" alt="takodachi assustado">
                     <img id="tako-dindin" src="img/dindin-fading.png" alt="din din">
@@ -29,7 +29,7 @@
                 
             </div>
             <div id="primo-rico">
-                <img src="img/primo-rico.jpg" alt="" class="img-fade">
+                <img id="primo-rico-img" src="img/primo-rico.jpg" alt="" class="img-fade">
                 <div id="yt-text">
                     <h2>COMO ORGANIZAR SUAS FINANÇAS E GUARDAR DINHEIRO | Planejamento financeiro FÁCIL</h2>
                     <h3>O Primo Rico</h3>
@@ -45,22 +45,30 @@
             <h1>Noticias</h1>
             <div id="div-noticias">
                 <div class="noticia">
-                    <img src="img/noticias/noticia-um.png" alt="">
-                    <p>Educação financeira para criança: ensine se divertindo com ela</p>
+                    <a href="https://g1.globo.com/ro/rondonia/especial-publicitario/credisis/credisis-nos-somos-cooperativa/noticia/2023/11/10/educacao-financeira-para-crianca-ensine-se-divertindo-com-ela.ghtml" target="_blank">
+                        <img src="img/noticias/noticia-um.png" alt="">
+                        <p>Educação financeira para criança: ensine se divertindo com ela</p>    
+                    </a>
                 </div>
                 <div class="noticia">
-                    <img src="img/noticias/noticia-dois.png" alt="">
-                    <p>O valor da sabedoria: Educação financeira molda o futuro de empreendedores</p>
+                    <a href="https://diariodocomercio.com.br/negocios/educacao-financeira-molda-futuro-50/#gref" target="_blank">
+                        <img src="img/noticias/noticia-dois.png" alt="">
+                        <p>O valor da sabedoria: Educação financeira molda o futuro de empreendedores</p>
+                    </a>
                     <!-- https://diariodocomercio.com.br/negocios/educacao-financeira-molda-futuro-50/#gref -->
                 </div>
                 <div class="noticia">
-                    <img src="img/noticias/noticia-tres.png" alt="">
-                    <p>13º salário: confira dicas de como utilizar bem o dinheiro extra</p>
+                    <a href="https://oimparcial.com.br/noticias/2023/11/13o-salario-confira-dicas-de-como-utilizar-bem-o-dinheiro-extra/" target="_blank">
+                        <img src="img/noticias/noticia-tres.png" alt="">
+                        <p>13º salário: confira dicas de como utilizar bem o dinheiro extra</p>
+                    </a>
                     <!-- https://oimparcial.com.br/noticias/2023/11/13o-salario-confira-dicas-de-como-utilizar-bem-o-dinheiro-extra/ -->
                 </div>
                 <div class="noticia">
-                    <img src="img/noticias/noticia-quatro.png" alt="">
-                    <p>Futuros empresários: Ensinando adolescentes a cuidarem do dinheiro</p>
+                    <a href="https://www.suno.com.br/noticias/colunas/diogo-angioleti/educacao-financeira-adolescentes-futuro-prospero-independente/" target="_blank">
+                        <img src="img/noticias/noticia-quatro.png" alt="">
+                        <p>Futuros empresários: Ensinando adolescentes a cuidarem do dinheiro</p>
+                    </a>
                     <!-- https://www.suno.com.br/noticias/colunas/diogo-angioleti/educacao-financeira-adolescentes-futuro-prospero-independente/ -->
                 </div>
             </div>
