@@ -173,11 +173,11 @@ footer{
     box-shadow: 0 0 0 2px var(--var-roxo);
 }
 
-.noticia span{
+.noticia p{
     font-size: 1.5vw;
     font-weight: 500;
 }
-.noticia span:hover{
+.noticia p:hover{
     color: var(--var-roxo);
 }
 
