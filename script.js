@@ -17,4 +17,8 @@ var home = () => {
     primoRicoImg.addEventListener("click", (event) => {
         window.open("https://youtu.be/in0XbfQEm2A", '_blank')
     })
+    
+    licaoDinheiro.addEventListener("click", (event) => {
+        window.open("https://www.instagram.com/projetomilhao/", '_blank')
+    })
 }
